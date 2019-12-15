@@ -5,7 +5,7 @@
 
 struct PhysVehicle3D;
 
-#define MAX_ACCELERATION 750.0f
+#define MAX_ACCELERATION 1000.0f
 #define GO_BACK 1500.0f
 #define TURN_DEGREES 15.0f * DEGTORAD
 #define BRAKE_POWER 500.0f
@@ -29,6 +29,7 @@ public:
 	float acceleration;
 	float brake;
 	float nitro;
+	bool out_camera = true;
 	bool camera_back = false;
 	bool camera_front = false;
 };
